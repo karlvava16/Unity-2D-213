@@ -11,7 +11,7 @@ public class DisplayScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        clockTMP = GameObject.Find("ClockTMP").GetComponent<TMPro.TextMeshProUGUI>();
+        clockTMP = GameObject.Find("DisplayCanvasClockTMP").GetComponent<TMPro.TextMeshProUGUI>();
         gameTime = 0f;
     }
 

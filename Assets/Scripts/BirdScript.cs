@@ -19,9 +19,9 @@ public class BirdScript : MonoBehaviour
     {
         if (Input. GetKeyDown(KeyCode.Space))
         {
-            float forceAmplitude = minForce +
-                                   (maxForce - minForce) * ForceIndicatorScript. forceFactor;
-            rb2d.AddForce(arrow.right * 1000f);
+            float forceAmplitude = Time. timeScale * ( minForce +
+                                                       (maxForce - minForce) * ForceIndicatorScript. forceFactor);
+            rb2d.AddForce(arrow.right * forceAmplitude);
         }
     }
 }
