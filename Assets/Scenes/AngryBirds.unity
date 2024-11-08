@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 113380652}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: PigDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1539,7 +1539,7 @@ GameObject:
   - component: {fileID: 1347379130}
   m_Layer: 0
   m_Name: bird_0
-  m_TagString: Untagged
+  m_TagString: PigDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
