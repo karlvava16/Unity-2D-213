@@ -2,7 +2,7 @@
 
 ### 07.11
 
-![Screenshot](Screenshot/07-11.webm)
+![Screenshot](Screenshot/07-11.gif)
 
 ### 06.11
 
