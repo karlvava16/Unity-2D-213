@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/AngryBirds.unity
+    guid: b0ec7e3ec7907974884ea56b0c73dc54
+  - enabled: 1
+    path: Assets/Scenes/AngryBirds 1.unity
+    guid: 360262b534b841f40a69405b9656c44a
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

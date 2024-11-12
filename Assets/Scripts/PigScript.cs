@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using Assets.Scripts;
 using UnityEngine;
 
 public class PigScript : MonoBehaviour
@@ -7,20 +6,21 @@ public class PigScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("PigDestroy"))
         {
-            Debug.Log(collision.gameObject.name);   
+            GameState.isLevelCompleted = true;
+            GameState.Pause("ВИГРАШ", "Рівень пройдено");
         }
     }
 }

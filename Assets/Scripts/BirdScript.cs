@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using UnityEngine;
 
 public class BirdScript : MonoBehaviour
@@ -13,14 +14,15 @@ public class BirdScript : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        GameState.isLevelCompleted = false;
     }
 
     void Update()
     {
-        if (Input. GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            float forceAmplitude = Time. timeScale * ( minForce +
-                                                       (maxForce - minForce) * ForceIndicatorScript. forceFactor);
+            float forceAmplitude = Time.timeScale * (minForce +
+                                                       (maxForce - minForce) * ForceIndicatorScript.forceFactor);
             rb2d.AddForce(arrow.right * forceAmplitude);
         }
     }
