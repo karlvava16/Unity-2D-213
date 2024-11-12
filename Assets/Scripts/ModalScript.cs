@@ -12,6 +12,9 @@ public class ModalScript : MonoBehaviour
     private TMPro.TextMeshProUGUI titleTMP;
     [SerializeField]
     private TMPro.TextMeshProUGUI messageTMP;
+    [SerializeField]
+    private GameObject OnButton;
+
 
     void Start()
     {
@@ -39,6 +42,10 @@ public class ModalScript : MonoBehaviour
             titleTMP.text = title;
             messageTMP.text = message;
             content.SetActive(true);
+            if (GameState.sceneNumber >= GameState.sceneMax)
+            {
+                OnButton.SetActive(false);
+            }
         }
         else
         {
@@ -51,8 +58,15 @@ public class ModalScript : MonoBehaviour
     {
         if (GameState.isLevelCompleted)
         {
-            GameState.sceneNumber += 1;
-            SceneManager.LoadScene(GameState.sceneNumber);
+            if (GameState.sceneNumber < GameState.sceneMax)
+            {
+                GameState.sceneNumber += 1;
+                SceneManager.LoadScene(GameState.sceneNumber);
+            }
+            else
+            {
+                OnButton.SetActive(false);
+            }
         }
         else
         {

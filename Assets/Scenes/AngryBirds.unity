@@ -264,6 +264,11 @@ Transform:
   - {fileID: 440497855}
   m_Father: {fileID: 1052924835}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &304375656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 974801763622068824, guid: b3617ecaa636dc44bb81199ee5dce257, type: 3}
+  m_PrefabInstance: {fileID: 717439724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &324510936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -667,6 +672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ModalCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3695860107265329881, guid: b3617ecaa636dc44bb81199ee5dce257, type: 3}
+      propertyPath: OnButton
+      value: 
+      objectReference: {fileID: 304375656}
     - target: {fileID: 3695860107265329881, guid: b3617ecaa636dc44bb81199ee5dce257, type: 3}
       propertyPath: titleTMP
       value: 
